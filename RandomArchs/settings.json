@@ -1,0 +1,9 @@
+//Arquivo de configurações do VSCODE
+
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active"
+}
