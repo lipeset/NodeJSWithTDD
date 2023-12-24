@@ -7,3 +7,35 @@ npm install eslint --save-dev //instalação da biblioteca em ambiente de dev
 
 Importante adicionar a pastar 'node_modules' ao .gitignore para não subir
 a pasta inteira para o repositório.
+
+Como instalamos o LINT sem ser globalmente, precisamos adentrar a pasta
+node_modules para iniciar o LINT. O comando está abaixo:
+node_modules/.bin/eslint --init //isso criará o comando inicial do LINT
+
+Lembrando que deve estar no terminal LINUX para que funcione.
+
+Responda as perguntas do eslint da seguinte forma:
+y //para proceder a instalação
+opção 2 //checar sintaxe e encontrar problemas
+escolha se está rodando no JS, CommonJS ou nenhum
+escolha o framework que irá utilizar no projeto
+escolha onde irá rodar seu projeto (browser ou node)
+JSON //para formatar o seu arquivo de configuração do LINT
+
+Se tudo tiver corrido bem, você receberá uma mensagem como essa:
+Successfully created .eslintrc.json file in PASTA_DESTINO
+
+Instalado o LINT, iremos pedir para que ele analise um arquivo, passando
+o comando abaixo:
+./node_modules/.bin/eslint RandomArchs/index.js
+Irá acusar todos os erros e/ou coisas fora do padrão que seu código contém.
+
+Ao colocar o seguinte bloco de configurações no settings.json do vscode,
+toda vez que você salvar um arquivo, ele irá automaticamente aplicar as
+correções do ESLINT:
+"editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+Lembrando que as configurações do ESLINT são mantidas no arquivo ".eslintrc.json"
+criado assim que finalizamos a instalão da lib. Lá você consegue realizar
+as alterações e aplicar os padrões de código desejados.
