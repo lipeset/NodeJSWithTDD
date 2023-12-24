@@ -42,5 +42,11 @@
             "foreground": "#1eff00",
             "background": "#7a7a7a"
         }
+    },
+    "git.confirmSync": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
 }
