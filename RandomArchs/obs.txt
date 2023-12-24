@@ -1,0 +1,9 @@
+Aplicando o NPM para gerenciar o projeto para que possamos utilizar o LINT
+e manter a padronização do código em todos os momentos do desenvolvimento.
+
+Comandos:
+npm init -y //para iniciar o gerenciamento do NPM com as opções default.
+npm install eslint --save-dev //instalação da biblioteca em ambiente de dev
+
+Importante adicionar a pastar 'node_modules' ao .gitignore para não subir
+a pasta inteira para o repositório.
