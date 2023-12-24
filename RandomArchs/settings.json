@@ -6,5 +6,6 @@
     "editor.fontLigatures": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "git.enableSmartCommit": true
 }
