@@ -39,3 +39,5 @@ correções do ESLINT:
 Lembrando que as configurações do ESLINT são mantidas no arquivo ".eslintrc.json"
 criado assim que finalizamos a instalão da lib. Lá você consegue realizar
 as alterações e aplicar os padrões de código desejados.
+
+Importante instalar também o plugin do próprio VSCODE para o ESLINT.
