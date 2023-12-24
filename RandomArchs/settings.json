@@ -7,5 +7,40 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "workbench.iconTheme": "vscode-icons",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "todo-tree.highlights.defaultHighlight":{
+        "type": "text"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "icon": "bug",
+            "foreground": "#00db42",
+            "background": "#7a7a7a"
+        },
+        "HACK": {
+            "icon": "tools",
+            "foreground": "#d4d4d4",
+            "background": "#7a7a7a"
+        },
+        "FIXME": {
+            "icon": "alert",
+            "foreground": "#fbff00",
+            "background": "#7a7a7a"
+        },
+        "XXX": {
+            "icon": "x",
+            "foreground": "#ff0000",
+            "background": "#7a7a7a"
+        },
+        "[ ]": {
+            "icon": "issue-draft",
+            "foreground": "#00f7ff",
+            "background": "#7a7a7a"
+        },
+        "[x]": {
+            "icon": "issue-closed",
+            "foreground": "#1eff00",
+            "background": "#7a7a7a"
+        }
+    }
 }

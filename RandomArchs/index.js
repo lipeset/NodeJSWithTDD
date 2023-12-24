@@ -3,9 +3,15 @@ function helloWorld(){
 }
 helloWorld();
 
-// TODO: nova task
+// ABAIXO OS COMANDOS DO TODO-TREE
+// BUG: CÓDIGO QUEBRADO
+// HACK: CÓDIGO DIFERENTE
+// FIXME: CÓDIGO DE CORREÇÃO
+// XXX: RANDOM
+// [ ]: ISSUE ESCOLHIDA
+// [x]: ISSUE FECHADA 
+
 const saudacao = () => {
-    //FIXME: resolver isso aqui
     var data = new Date();
     return data.getHours() <= 12? "bom dia": data.getHours <= 18? "boa tarde": "boa noite";
 }
