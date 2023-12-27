@@ -42,4 +42,4 @@ as alterações e aplicar os padrões de código desejados.
 
 Importante instalar também o plugin do próprio VSCODE para o ESLINT.
 
-Os testes serão realizados pela biblioteca JEST.
+Os testes serão realizados pela biblioteca JEST, versão 23.6.0.
