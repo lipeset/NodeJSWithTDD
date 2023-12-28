@@ -9,3 +9,13 @@ test("Deve listar todos os usuários", () =>{
 		expect(res.body[0]).toHaveProperty("name", "Felipe Lucas");
 	});
 });
+
+test("Deve inserir um usuário com sucesso", () => {
+	return request(app).post("/users").send({
+		name: "Felipe Almeida",
+		email: "felipe2@email.com"
+	}).then(res => {
+		expect(res.status).toBe(201);
+		expect(res.body.name).toBe("Felipe Almeida");
+	});
+});
