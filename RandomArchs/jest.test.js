@@ -19,7 +19,7 @@ test("Trabalhando com objetos", () => {
 	expect(obj.name).toBe("Felipe");
 
 	const obj2 = {"name": "Felipe", "email": "felipe@email.com"};
-	expect(obj).toBe(obj2);
+	//expect(obj).toBe(obj2);
 	expect(obj).toEqual(obj2);
 	expect(obj).toStrictEqual(obj2);
 });
