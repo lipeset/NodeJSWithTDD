@@ -11,11 +11,12 @@ test("Deve listar todos os usuários", () =>{
 });
 
 test("Deve inserir um usuário com sucesso", () => {
-	return request(app).post("/users").send({
-		name: "Felipe Almeida",
-		email: "felipe2@email.com"
-	}).then(res => {
-		expect(res.status).toBe(201);
-		expect(res.body.name).toBe("Felipe Almeida");
-	});
+	return request(app)
+		.post("/users").send({
+			name: "Felipe Almeida",
+			email: "felipe2@email.com"
+		}).then(res => {
+			expect(res.status).toBe(201);
+			expect(res.body.name).toBe("Felipe Almeida");
+		});
 });
