@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 /**
- * @param { import("knex").Knex } knex
- * @returns { Promise<void> }
+ * 	@param { import("knex").Knex } knex
+ * 	@returns { Promise<void> }
  */
 exports.up = (knex) => {
 	return knex.schema.createTable("users", (t) => {
@@ -16,5 +17,5 @@ exports.up = (knex) => {
  * @returns {Promise<void>}
  * */
 exports.down = (knex) => {
-  return knex.schema.dropTable('users');
+	return knex.schema.dropTable("users");
 };
