@@ -24,6 +24,9 @@ test("Deve inserir um usuário com sucesso", () => {
 		});
 });
 
+/* FORMAS DE TRABALHAR COM REQUISIÇÕES ASSÍNCRONAS ATÉ QUE TENHAM SIDO RESOLVIDAS */
+
+// UTILIZANDO O .THEN()
 test("Não deve inserir usuário sem nome", () => {
 	return request(app).post("/users")
 		.send({
@@ -34,4 +37,28 @@ test("Não deve inserir usuário sem nome", () => {
 			expect(res.status).toBe(400);
 			expect(res.body.error).toBe("Nome é um atributo obrigatório");
 		});
+});
+
+// UTILIZANDO ASYNC/AWAIT
+test("Não deve inserir usuário sem email", async () => {
+	const result = await request(app).post("/users")
+		.send({
+			name: "Felipe Almeida",
+			password: "1337"
+		});
+	expect(result.status).toBe(400);
+	expect(result.body.error).toBe("Email é um atributo obrigatório");
+});
+
+// UTILIZANDO O DONE()
+test("Não deve inserir usuário sem senha", (done) => {
+	request(app).post("/users")
+		.send({
+			name: "Felipe Almeida",
+			email: "teste@email.com"
+		}).then((res) => {
+			expect(res.status).toBe(400);
+			expect(res.body.error).toBe("Senha é um atributo obrigatório");
+			done();
+		}).catch(err => done.fail(err));
 });
