@@ -43,3 +43,9 @@ as alterações e aplicar os padrões de código desejados.
 Importante instalar também o plugin do próprio VSCODE para o ESLINT.
 
 Os testes serão realizados pela biblioteca JEST, versão 29.7.0.
+
+ORDEM DE CRIAÇÃO DE testes
+Criar o teste no arquivo específico que fica na pasta "TEST" e em suas subpastas.
+Criar a funcionalidade no arquivo "ROUTES" que fica na pasta "CONFIGS".
+Criar a nova rota no arquivo específico que fica na pasta "ROUTES".
+Criar a funcionalidade no arquivo específico que fica na pasta "SERVICES".
